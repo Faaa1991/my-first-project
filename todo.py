@@ -12,3 +12,15 @@ def add_todo(item):
 def list_todos():
     for i, t in enumerate(todos):
         print(f"{i+1}. {t}")
+while True:
+    show_menu()
+    choice = input("Choose: ")
+    
+    if choice == "1":
+        add_todo(input("Enter TODO: "))
+    elif choice == "2":
+        list_todos()
+    elif choice == "3":
+        break
+    else:
+        print("Invalid choice")
