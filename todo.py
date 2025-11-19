@@ -24,3 +24,7 @@ while True:
         break
     else:
         print("Invalid choice")
+def save_todos():
+    with open("todos.txt", "w") as f:
+        for t in todos:
+            f.write(t + "\n")
