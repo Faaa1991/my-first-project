@@ -1,1 +1,2 @@
-
+print("3. Delete TODO")
+print("4. Exit")
