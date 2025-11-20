@@ -37,3 +37,6 @@ def load_todos():
         pass
 
 load_todos()
+def delete_todo(index):
+    if 0 <= index < len(todos):
+        todos.pop(index)
