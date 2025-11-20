@@ -40,3 +40,9 @@ load_todos()
 def delete_todo(index):
     if 0 <= index < len(todos):
         todos.pop(index)
+def list_todos():
+    if not todos:
+        print("No todos yet!")
+        return
+    for i, t in enumerate(todos, start=1):
+        print(f"[{i}] {t}")
