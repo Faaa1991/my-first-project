@@ -28,3 +28,12 @@ def save_todos():
     with open("todos.txt", "w") as f:
         for t in todos:
             f.write(t + "\n")
+def load_todos():
+    try:
+        with open("todos.txt", "r") as f:
+            for line in f:
+                todos.append(line.strip())
+    except FileNotFoundError:
+        pass
+
+load_todos()
