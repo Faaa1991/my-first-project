@@ -46,3 +46,5 @@ def list_todos():
         return
     for i, t in enumerate(todos, start=1):
         print(f"[{i}] {t}")
+print("3. Delete TODO")
+print("4. Exit")
