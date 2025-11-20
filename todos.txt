@@ -8,3 +8,12 @@ A command-line TODO list manager built with Python.
 - List TODO items
 - Delete TODO items
 - Save/load todos from file
+def load_todos():
+    try:
+        with open("todos.txt", "r") as f:
+            for line in f:
+                todos.append(line.strip())
+    except FileNotFoundError:
+        pass
+
+load_todos()
