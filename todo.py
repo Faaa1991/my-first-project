@@ -48,3 +48,6 @@ def list_todos():
         print(f"[{i}] {t}")
 print("3. Delete TODO")
 print("4. Exit")
+def edit_todo(index, new_text):
+    if 0 <= index < len(todos):
+        todos[index] = new_text
