@@ -51,3 +51,8 @@ print("4. Exit")
 def edit_todo(index, new_text):
     if 0 <= index < len(todos):
         todos[index] = new_text
+elif choice == "5":
+    list_todos()
+    i = int(input("Edit which number? ")) - 1
+    new_text = input("New text: ")
+    edit_todo(i, new_text)
